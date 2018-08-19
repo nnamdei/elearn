@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+{% if user.is_authenticated %}
+  <div style="margin: 16px;">
+  <div><h4>Hi <strong>{{ user.username }}!</strong></h4></div>
+  &nbsp;
+  &nbsp;
+  <div>
+    <p><a class="btn btn-primary btn-lg" href="{% url "manage_course_list" %}" role="button">Manage/Create Courses</a></p>
+    </div></div>
+{% else %}
+
+    <div class="container-fluid">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>E-Learn Learning Management System</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi maximus auctor ante, quis molestie purus volutpat non. Curabitur consequat enim eu fringilla sollicitudin.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+      </div>
+
+    </div> <!-- /container -->
+  {% endif %}
+
+  {% endblock %}

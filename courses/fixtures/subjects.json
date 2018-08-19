@@ -1,0 +1,42 @@
+[
+{
+  "model": "courses.subject",
+  "pk": 7,
+  "fields": {
+    "title": "Geography",
+    "slug": "geography"
+  }
+},
+{
+  "model": "courses.subject",
+  "pk": 8,
+  "fields": {
+    "title": "History",
+    "slug": "history"
+  }
+},
+{
+  "model": "courses.subject",
+  "pk": 9,
+  "fields": {
+    "title": "English Language",
+    "slug": "english-language"
+  }
+},
+{
+  "model": "courses.subject",
+  "pk": 10,
+  "fields": {
+    "title": "Pyschology",
+    "slug": "pyschology"
+  }
+},
+{
+  "model": "courses.subject",
+  "pk": 11,
+  "fields": {
+    "title": "Sociology",
+    "slug": "sociology"
+  }
+}
+]
