@@ -25,7 +25,7 @@ class TestUserRegistrationView(TestCase):
         'confirm': 'This field is required',
       }
     }
-    self.asssertEqual(exp_data, response.json())
+    self.assertEqual(exp_data, response.json())
     
     # test req method POST with invalid data
     req_data = {
@@ -41,7 +41,7 @@ class TestUserRegistrationView(TestCase):
         'confirm': 'Passwords mismatched'
       }
     }
-    self.asssertEqual(exp_data, response.json())
+    self.assertEqual(exp_data, response.json())
 
     # test req method POST with valid data
     req_data = {
@@ -55,5 +55,5 @@ class TestUserRegistrationView(TestCase):
       'error': False,
       'message': 'Success, Please login'
     }
-    self.asssertEqual(exp_data, response.json())
+    self.assertEqual(exp_data, response.json())
     self.assertEqual(User.objects.count(), 1)
